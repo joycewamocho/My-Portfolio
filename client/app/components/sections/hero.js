@@ -38,7 +38,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl text-indigo-100 mb-8 leading-relaxed">
-              I build beautiful, responsive and user-friendly web applications
+              I build streamlined, responsive and user-friendly web applications
               with modern technologies and best practices.
             </p>
             
