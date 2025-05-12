@@ -1,7 +1,8 @@
+"use client";
+
 export default function Projects({ projects }) {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-950/50 via-purple-900/30 to-violet-950/50 text-white max-w-7xl mx-auto">
-      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
         {projects.map((project, index) => (
           <div
@@ -10,43 +11,22 @@ export default function Projects({ projects }) {
           >
             <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden group">
               <img
-                src={project.image || '/placeholder.jpg'} // Fallback image
+                src={project.image || '/placeholder.jpg'}
                 alt={project.title}
                 className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 w-full">
-                  <div className="flex justify-end space-x-3">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 sm:px-4 sm:py-2 bg-pink-500 hover:bg-pink-600 transition-colors text-white rounded-lg text-xs sm:text-sm font-semibold shadow-md hover:shadow-pink-500/50"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 sm:px-4 sm:py-2 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white rounded-lg text-xs sm:text-sm font-semibold shadow-md hover:shadow-indigo-500/50"
-                    >
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            
+
             <div className="p-4 sm:p-6">
-              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-pink-300 hover:text-indigo-400 transition-colors line-clamp-1">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-pink-300 hover:text-pink-400 transition-colors line-clamp-1">
                 {project.title}
               </h3>
               <p className="mb-4 text-sm sm:text-base text-indigo-100 dark:text-gray-300 line-clamp-3">
                 {project.description}
               </p>
-              
-              <div className="flex flex-wrap gap-2">
+
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
@@ -55,6 +35,27 @@ export default function Projects({ projects }) {
                     {tag}
                   </span>
                 ))}
+              </div>
+
+              <div className="flex justify-start space-x-3">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View live demo of ${project.title}`}
+                  className="px-3 py-1.5 sm:px-4 sm:py-2 bg-pink-500 hover:bg-pink-600 transition-colors text-white rounded-lg text-xs sm:text-sm font-semibold shadow-md hover:shadow-pink-500/50"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View GitHub repository for ${project.title}`}
+                  className="px-3 py-1.5 sm:px-4 sm:py-2 bg-indigo-600 hover:bg-indigo-700 transition-colors text-white rounded-lg text-xs sm:text-sm font-semibold shadow-md hover:shadow-indigo-500/50"
+                >
+                  GitHub
+                </a>
               </div>
             </div>
           </div>
