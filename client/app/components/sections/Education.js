@@ -40,7 +40,7 @@ export default function Education() {
                   Kabarak University
                 </p>
                 <p className="text-xs sm:text-sm md:text-base text-indigo-300">
-                  2018 – 2018
+                  2015 – 2018
                 </p>
               </div>
             </div>
