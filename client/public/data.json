@@ -1,0 +1,68 @@
+{
+    "projects": [
+      {
+        "title": "SchoolBasi",
+        "description": "A School Minibus Booking System with real-time tracking, route selection, and seat booking. Built with Next.js, Prisma, PostgreSQL, and Google Maps API.",
+        "image": "/bg5.jpg",
+        "tags": ["Next.js", "Prisma", "PostgreSQL", "Google Maps API", "Tailwind CSS"],
+        "liveUrl": "https://school-bus-4csj.vercel.app/",
+        "githubUrl": ""
+      },
+      {
+        "title": "Trade Hub",
+        "description": "A marketplace SPA where users can buy and sell products. Built with React, Flask, and SQLite.",
+        "image": "/tradehub.jpeg",
+        "tags": ["React", "Flask", "SQLite", "Bootstrap CSS"],
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/joycewamocho/tradehub-react-app-flask"
+      } 
+    ],
+    "skills": [
+      {
+        "name": "Programming Languages",
+        "skills": [
+          { "name": "JavaScript", "proficiency": 85 },
+          { "name": "Python", "proficiency": 80 }
+        ]
+      },
+      {
+        "name": "Frontend",
+        "skills": [
+          { "name": "React", "proficiency": 80 },
+          { "name": "Next.js", "proficiency": 75 },
+          { "name": "HTML", "proficiency": 90 },
+          { "name": "CSS", "proficiency": 85 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "skills": [
+          { "name": "Node.js", "proficiency": 70 },
+          { "name": "Flask", "proficiency": 75 }
+        ]
+      },
+      {
+        "name": "Databases",
+        "skills": [
+          { "name": "PostgreSQL", "proficiency": 80 },
+          { "name": "SQLite", "proficiency": 75 }
+        ]
+      },
+      {
+        "name": "Libraries/Frameworks",
+        "skills": [
+          { "name": "Three.js", "proficiency": 70 },
+          { "name": "Tailwind CSS", "proficiency": 80 },
+          { "name": "Bootstrap", "proficiency": 85 }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "skills": [
+          { "name": "Vercel", "proficiency": 70 },
+          { "name": "Railway", "proficiency": 70 }
+        ]
+      }
+    ]
+  }
+  
