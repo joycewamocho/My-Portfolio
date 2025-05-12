@@ -166,14 +166,7 @@ export default function Header() {
                 className="bg-indigo-800/50 hover:bg-pink-500/80 text-white p-1.5 sm:p-2 md:p-3 rounded-full transition-all duration-300 shadow-md hover:shadow-pink-500/50"
               />
             </div>
-            
-            <Button 
-              variant="default" 
-              size="lg" 
-              className="mt-4 sm:mt-6 md:mt-8 font-semibold bg-gradient-to-r from-pink-500 to-indigo-500 hover:from-pink-600 hover:to-indigo-600 text-white rounded-xl shadow-lg hover:shadow-pink-500/50"
-            >
-              Resume
-            </Button>
+         
           </div>
         </div>
       )}
